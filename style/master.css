@@ -1,0 +1,269 @@
+
+.hamRotate{
+    transform: rotate(90deg);
+    /* background-color: red; */
+    cursor: pointer;
+    padding-right: 10px;
+}
+.myMenu{
+    >li{
+        position: relative;
+        &:hover{
+            &::before{
+                width: 100%;
+            }
+            >a{
+                position: relative;
+                z-index: 999;
+                color: white !important;
+            }
+        }
+        &::before{
+            content: '';
+            display: flex;
+            width: 0;height: 100%;
+            position: absolute;
+            top: 0;left: 0;
+            transition: .4s;
+            background-color:#CEB19C;
+        }
+    }
+}
+
+.headTop{
+    margin-top: 150px;
+    background-image: url(../img/homepage_hero.jpg);
+    background-position:top center;
+    background-size: cover;
+    min-height: 650px;
+
+}
+.txt{
+    margin-block: 100px 0;
+}
+
+        .box{
+
+            width: 100%;
+            height: 300px;
+            display: flex;
+            >figure{
+                width: 50% ;
+                height: 100%;
+                border: 2px solid black;
+                transition: 1s; 
+                &:hover{
+                    width: 150%;
+                }
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    
+                }
+            }
+        }
+
+
+.heading-with-underline {
+  position: relative;
+  display: flex; 
+  color: white;
+}
+
+.heading-with-underline::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -18px;       
+  transform: translateX(-50%);
+  width: 100px;      
+  height: 2px;       
+  background-color: #971818; 
+}
+
+.background{
+    margin-bottom: 330px !important;
+    background-image: url(../img/intro-bg2_02.jpg);
+    background-repeat: no-repeat;
+    background-position:left center;
+    background-size: cover;
+    min-height: 500px;
+
+}
+
+        .wrapper {
+            width: 100%;
+            height: 100vh;
+            padding: 100px;
+            display: grid;
+          
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 50%);
+
+            >figure {
+               
+                
+                                position: relative;
+                overflow: hidden !important;
+                  &:hover{
+                    >img{
+                      width: 105%;
+                      height: 105%;
+                                         top: -5px;
+                        left: -10px;
+
+
+                    }}
+
+
+                &:nth-of-type(2) {
+                    grid-area: 2 / 1 / span 1 / span 1;
+                }
+
+                &:nth-of-type(3) {
+                    grid-area: 1 / 2 / span 2 / span 2;
+                }
+
+                &:nth-of-type(6) {
+                    grid-column: 4 / span 2;
+                }
+
+                >img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                   
+                                        position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: 1s;
+                }
+                
+            }
+
+        }
+
+        .sec2{
+            height: 500px;
+        }
+
+
+
+        
+    .mahsa {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        border-radius: 50%;
+        z-index: 999;
+
+        .circle {
+            width: 180px;
+            height: 180px;
+
+            &::before,
+            &::after {
+                content: '';
+                width: 175px;
+                height: 175px;
+                position: absolute;
+                top: -5px;
+                left: -5px;
+                transition: 1s;
+                rotate: 10deg;
+            }
+
+            &::before {
+                background-color: gray;
+                border-radius: 30% 70% 35% 65% / 30% 36% 64% 70%;
+                z-index: -998;
+            }
+
+            &::after {
+                background-color: rgb(49, 49, 49);
+                border-radius: 64% 36% 61% 39% / 43% 36% 64% 57%;
+                z-index: -999;
+            }
+
+            >img {
+                width: 165px;
+                height: 165px;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: bottom;
+            }
+
+        }
+
+        &:hover {
+            >a {
+                >i {
+                    visibility: visible;
+                }
+            }
+
+            .circle {
+
+                &::before,
+                &::after {
+                    rotate: 45deg;
+                }
+            }
+        }
+
+        >a {
+            >i {
+                font-size: 28px;
+                color: black;
+                transition: .6s;
+                position: absolute;
+                visibility: hidden;
+
+                &:hover {
+                    color: #7e7e7e;
+                }
+            }
+
+            &:nth-of-type(1) {
+                >i {
+                    top: -5px;
+                    left: -30px;
+                }
+            }
+
+            &:nth-of-type(2) {
+                >i {
+                    top: 35px;
+                    left: -52px;
+                }
+            }
+
+            &:nth-of-type(3) {
+                >i {
+                    top: 85px;
+                    left: -52px;
+                }
+            }
+
+            &:nth-of-type(4) {
+                >i {
+                    top: 125px;
+                    left: -30px;
+                }
+            }
+        }
+    }
+
+    .bg-rosegold{
+        background-color:#CEB19C;
+    }
+
+@media screen and (min-width:1400px){
+    .headTop{
+        background-position: center;
+    }
+}
+
+
+/* https://avada.website/salon/ */
