@@ -16,4 +16,4 @@
 
 - Role - Frontend
 
-- How to reach me : with my [[instagram](https://www.instagram.com/mahsacodes)] and [[linkedin])www.linkedin.com/in/mahsa-sahraei]
+- How to reach me : with my [[instagram](https://www.instagram.com/mahsacodes)] and [[linkedin](www.linkedin.com/in/mahsa-sahraei)]
